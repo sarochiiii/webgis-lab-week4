@@ -1,0 +1,19 @@
+{
+  "name": "412345-webgis-lab",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+  "forwardPorts": [8080, 5432],
+  "portsAttributes": {
+    "8080": {
+      "label": "GeoServer Web Admin",
+      "onAutoForward": "notify"
+    },
+    "5432": {
+      "label": "PostGIS (PostgreSQL)",
+      "onAutoForward": "silent"
+    }
+  },
+  "postAttachCommand": "echo 'พร้อมใช้งานแล้ว — รันคำสั่ง: docker compose up -d'"
+}
