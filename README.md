@@ -19,6 +19,6 @@ Repository นี้ใช้สำหรับติดตั้ง PostGIS + G
 - PostGIS database: gisdb, password: postgres, port: 5432
 - GeoServer admin: admin / geoserver, port: 8080
 
-## เชื่อมต่อ GeoServer กับ PostGIS (สัปดาห์ 6)
+## เชื่อมต่อ GeoServer กับ PostGIS
 
 ใส่ host เป็นชื่อ service คือ postgis ไม่ใช่ localhost
