@@ -16,8 +16,15 @@ services:
     environment:
       GEOSERVER_ADMIN_USER: admin
       GEOSERVER_ADMIN_PASSWORD: geoserver
+      org.geoserver.web.csp.strict: "false"
+      HTTP_SCHEME: "https"
+      HTTP_PROXY_NAME: ${CODESPACE_NAME}-8080.${GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN}
+      HTTP_PROXY_PORT: "443"
     ports:
       - "8080:8080"
+    volumes:
+      - gs_data:/opt/geoserver/data_dir
 
 volumes:
   pg_data:
+  gs_data:
