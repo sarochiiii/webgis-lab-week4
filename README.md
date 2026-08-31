@@ -1,5 +1,4 @@
-# 412345 Internet Mapping — WebGIS Lab (สัปดาห์ 4 + 6)
-
+# 412345 Internet Mapping — WebGIS Lab 
 Repository นี้ใช้สำหรับติดตั้ง PostGIS + GeoServer ผ่าน Docker Compose บน GitHub Codespaces
 ไม่ต้องติดตั้งอะไรบนเครื่องของนักศึกษาเลย ใช้แค่เบราว์เซอร์
 
